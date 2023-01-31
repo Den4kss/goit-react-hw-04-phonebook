@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  width: 80px;
+  margin: 0 10px;
+  color: black;
+  text-transform: capitalize;
+  background-color: red;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: green;
+}
