@@ -9,12 +9,14 @@ const ContactForm =({onSubmit})=> {
   const handleChange = e => {
     const { name: inputName, value } = e.currentTarget;
     if (inputName === 'name') {
-    setNumber(value)}
+      setName(value);
+    }
+else if(inputName==='number'){setNumber(value)} 
   };
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit(this.state);
-    this.setState({ name, number });
+    onSubmit({name, number});
+    
     setName('')
     setNumber('')
   };
